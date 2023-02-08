@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(204, 43%, 93%);
+}
+.parent {
+  width: 50%;
+  margin: auto;
+  margin-top: 150px;
+  background-color: #ffff;
+}
+.parent .top {
+  background-color: #ffff;
+  margin-bottom: 20px;
+}
+.parent .top h3 {
+  color: hsl(179, 62%, 43%);
+  font-weight: 700px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding: 30px 40px;
+  font-size: 21px;
+}
+.parent .top h4 {
+  color: hsl(71, 73%, 54%);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding-left: 35px;
+}
+.parent .top p {
+  color: hsl(218, 22%, 67%);
+  font-size: 14px;
+  padding: 15px 35px;
+  margin-bottom: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.parent .down {
+  display: flex;
+}
+.parent .down .left {
+  width: 50%;
+  background-color: hsl(179, 62%, 43%);
+}
+.parent .down .left h5 {
+  color: #ffff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px 40px;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.parent .down .left h3 {
+  color: #ffff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0px 40px;
+  font-size: 24px;
+  font-weight: 700;
+}
+.parent .down .left h3 small {
+  font-size: 12px;
+  font-weight: 100px;
+  color: hsl(245, 32%, 86%);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding-left: 10px;
+}
+.parent .down .left p {
+  color: #ffff;
+  font-size: 14px;
+  padding: 10px 35px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.parent .down .left button {
+  color: #ffff;
+  background-color: hsl(71, 73%, 54%);
+  border: 2px solid hsl(71, 73%, 54%);
+  padding: 8px 100px;
+  border-radius: 10px;
+  font-family: "Lucida Sans";
+  font-size: 20px;
+  margin: 30px 50px;
+}
+
+.parent .down .right {
+  background-color: hsl(179, 57%, 58%);
+  width: 50%;
+}
+.parent .down .right h5 {
+  color: #ffff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px 40px;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.parent .down .right p {
+  color: #ffff;
+  font-size: 14px;
+  padding: 10px 35px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 20px;
+}
+
+@media (max-width: 375px) {
+  .parent {
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    background-color: #ffff;
+    border-radius: 10px 10px 10px 10px;
+  }
+
+  .parent .down {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 30px;
+  }
+  .parent .down .left {
+    width: 100%;
+  }
+  .parent .down .left button {
+    color: #ffff;
+    background-color: hsl(71, 73%, 54%);
+    padding: 10px 55px;
+    border-radius: 5px;
+    font-family: "Lucida Sans";
+    font-size: 14px;
+  }
+  .parent .down .right {
+    width: 100%;
+    padding-bottom: 10px;
+    border-radius: 0 0 10px 10px;
+  }
+}
